@@ -1,0 +1,42 @@
+{
+  "artifact": "Orocore Inspector Composition Contract Provenance",
+  "repository": "Orocore_Inspector_Composition_Contract",
+  "status": "FOUNDATION_ONLY",
+  "delta_number": null,
+  "origin": {
+    "checkpoint": "FIVE_DELTA_ARCHITECTURE_CHECKPOINT",
+    "decision": "COMPOSITION_CONTRACT_NOT_DELTA_006"
+  },
+  "frozen_inputs": [
+    {
+      "delta": "DELTA-001",
+      "repository": "Authority_Composition_Inspector",
+      "head": "d83e1aaad685d5431052e459eea50a3ac144d3dd"
+    },
+    {
+      "delta": "DELTA-002",
+      "repository": "Hybrid_Witness_Traceability_Model",
+      "head": "010740f418a01b8c8c415493b36988df8e43ad68"
+    },
+    {
+      "delta": "DELTA-003",
+      "repository": "Orocore_Governed_Continuity_Architecture",
+      "head": "6b23f1d677d14b06f742a4d294bcc919d78d8a53"
+    },
+    {
+      "delta": "DELTA-004",
+      "repository": "Model_Monitor_Transfer_Inspector",
+      "head": "58a1105c18014d2a290d24187cafe597bdc95ea2"
+    },
+    {
+      "delta": "DELTA-005",
+      "repository": "Witness_Independence_Inspector",
+      "head": "be40c13f23f3e33dc549ecfffe5e81de24541fb8"
+    }
+  ],
+  "authority_inherited": false,
+  "execution_authority_created": false,
+  "claim_truth_created": false,
+  "global_pass_created": false,
+  "inspector_state_rewriting_allowed": false
+}

@@ -1,0 +1,38 @@
+{
+  "case_id": "CC-01_CORRELATED_WITNESS",
+  "description": "Composition remains possible for review, but witness independence carries an explicit correlation limitation.",
+  "outputs": [
+    {
+      "source_inspector": "DELTA-001",
+      "state": "TRACEABLE",
+      "freshness": "CURRENT",
+      "required": true
+    },
+    {
+      "source_inspector": "DELTA-002",
+      "state": "EVIDENCE_PRESENT",
+      "freshness": "CURRENT",
+      "required": true
+    },
+    {
+      "source_inspector": "DELTA-003",
+      "state": "PRESERVED",
+      "freshness": "CURRENT",
+      "required": true
+    },
+    {
+      "source_inspector": "DELTA-004",
+      "state": "TRANSFER_ESTABLISHED",
+      "freshness": "CURRENT",
+      "required": true
+    },
+    {
+      "source_inspector": "DELTA-005",
+      "state": "CORRELATED_SOURCE",
+      "freshness": "CURRENT",
+      "required": true
+    }
+  ],
+  "unresolved_dependencies": [],
+  "expected_standing": "COMPOSABLE_WITH_LIMITATION"
+}

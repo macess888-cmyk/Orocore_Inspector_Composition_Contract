@@ -1,0 +1,40 @@
+{
+  "case_id": "CC-02_REQUIRED_DEPENDENCY_HOLD",
+  "description": "A required assurance-transfer dependency is unresolved and cannot be treated as satisfied by other positive outputs.",
+  "outputs": [
+    {
+      "source_inspector": "DELTA-001",
+      "state": "TRACEABLE",
+      "freshness": "CURRENT",
+      "required": true
+    },
+    {
+      "source_inspector": "DELTA-002",
+      "state": "EVIDENCE_PRESENT",
+      "freshness": "CURRENT",
+      "required": true
+    },
+    {
+      "source_inspector": "DELTA-003",
+      "state": "PRESERVED",
+      "freshness": "CURRENT",
+      "required": true
+    },
+    {
+      "source_inspector": "DELTA-004",
+      "state": "HOLD",
+      "freshness": "CURRENT",
+      "required": true
+    },
+    {
+      "source_inspector": "DELTA-005",
+      "state": "INDEPENDENCE_ESTABLISHED",
+      "freshness": "CURRENT",
+      "required": true
+    }
+  ],
+  "unresolved_dependencies": [
+    "DELTA-004"
+  ],
+  "expected_standing": "DEPENDENCY_HOLD"
+}

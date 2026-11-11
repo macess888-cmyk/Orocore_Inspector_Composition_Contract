@@ -1,0 +1,109 @@
+{
+  "artifact": "Orocore Inspector Composition Reference Freeze",
+  "frozen_at": "2026-11-11T12:38:33.4390485Z",
+  "repository": "Orocore_Inspector_Composition_Contract",
+  "base_head": "84b199174bba2af391b26acf101eea323b63701d",
+  "standing": "BOUNDED_GREEN",
+  "delta_number": null,
+  "regression": {
+    "passed": 21,
+    "failed": 0
+  },
+  "tested_cases": [
+    "CC-00_ALL_PRESENT",
+    "CC-01_CORRELATED_WITNESS",
+    "CC-02_REQUIRED_DEPENDENCY_HOLD",
+    "CC-03_CONFLICT_UNRESOLVED",
+    "CC-04_STALE_REQUIRED_OUTPUT"
+  ],
+  "states": [
+    "COMPOSABLE_FOR_FURTHER_REVIEW",
+    "COMPOSABLE_WITH_LIMITATION",
+    "DEPENDENCY_HOLD",
+    "CONFLICT_UNRESOLVED",
+    "REVALIDATION_REQUIRED"
+  ],
+  "diagnostics": [
+    "CORRELATED_WITNESS_LIMITATION",
+    "REQUIRED_DEPENDENCY_UNRESOLVED",
+    "CONFLICT_UNRESOLVED",
+    "REQUIRED_OUTPUT_STALE"
+  ],
+  "frozen_inputs": [
+    {
+      "delta": "DELTA-001",
+      "head": "d83e1aaad685d5431052e459eea50a3ac144d3dd"
+    },
+    {
+      "delta": "DELTA-002",
+      "head": "010740f418a01b8c8c415493b36988df8e43ad68"
+    },
+    {
+      "delta": "DELTA-003",
+      "head": "6b23f1d677d14b06f742a4d294bcc919d78d8a53"
+    },
+    {
+      "delta": "DELTA-004",
+      "head": "58a1105c18014d2a290d24187cafe597bdc95ea2"
+    },
+    {
+      "delta": "DELTA-005",
+      "head": "be40c13f23f3e33dc549ecfffe5e81de24541fb8"
+    }
+  ],
+  "boundaries": [
+    "Composition does not rewrite local inspector states",
+    "COMPOSABLE_FOR_FURTHER_REVIEW does not establish global PASS",
+    "COMPOSABLE_WITH_LIMITATION does not mean rejection",
+    "DEPENDENCY_HOLD does not establish global failure",
+    "Required unresolved dependencies cannot be treated as satisfied",
+    "Stale required outputs require revalidation",
+    "Unresolved conflicts remain explicit",
+    "Correlated witness evidence remains evidence",
+    "Composition does not create claim truth",
+    "Composition does not create execution authority",
+    "No DELTA-006 is created by this artifact"
+  ],
+  "files": [
+    {
+      "path": "docs/COMPOSITION_PROVENANCE.json",
+      "sha256": "CACEB35BCD78B5C665973603DAF68BB62449D4F7D40C4189D4FF50F4EFC80842"
+    },
+    {
+      "path": "specimens/composition/CC-00_ALL_PRESENT.json",
+      "sha256": "642A80F6377D6AF2F10609BE62D09E3B83DF88EAE823D06532E2C4BC9497D1D1"
+    },
+    {
+      "path": "specimens/composition/CC-01_CORRELATED_WITNESS.json",
+      "sha256": "389258D2DC671ADE3CF11E14DA005346897F1BADE61B117BDC59156C9E38823C"
+    },
+    {
+      "path": "specimens/composition/CC-02_REQUIRED_DEPENDENCY_HOLD.json",
+      "sha256": "76F5D42EEDE8E316F9981D450BBAAFB3C8492AAC11CD89875B986559FED42B80"
+    },
+    {
+      "path": "specimens/composition/CC-03_CONFLICT_UNRESOLVED.json",
+      "sha256": "E9FA8BAF59AB971C4FD469A4A0BFFAA73323A61E3C97808FD4A50A9903CBC7B0"
+    },
+    {
+      "path": "specimens/composition/CC-04_STALE_REQUIRED_OUTPUT.json",
+      "sha256": "B1464ABD15E1A027D641FC5BCB7BAA97534D6580AB5C9852659B6ACA80D59DEA"
+    },
+    {
+      "path": "src/composition_contract/__init__.py",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "src/composition_contract/composer.py",
+      "sha256": "2C629C9C9F612BEB89AAF3215DEE24FF9EDD752FF1162F44DEC739533F4D93F0"
+    },
+    {
+      "path": "tests/test_composition_case_contract.py",
+      "sha256": "982B02DEBBBDEFD952F53F4884B9D07DE4E98DED6BC02BDCAE9C7F4F5E08BACC"
+    },
+    {
+      "path": "tests/test_composition_semantics_red.py",
+      "sha256": "24FEAB92AA47721BE5D76C61ABF889FDAC9D51F5FD28329148289D69963D515D"
+    }
+  ]
+}

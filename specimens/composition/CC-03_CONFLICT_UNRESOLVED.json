@@ -1,0 +1,27 @@
+{
+  "case_id": "CC-03_CONFLICT_UNRESOLVED",
+  "description": "Two bounded outputs are preserved independently while an explicit cross-inspector conflict remains unresolved.",
+  "outputs": [
+    {
+      "source_inspector": "DELTA-001",
+      "state": "TRACEABLE",
+      "freshness": "CURRENT",
+      "required": true
+    },
+    {
+      "source_inspector": "DELTA-003",
+      "state": "PRESERVED",
+      "freshness": "CURRENT",
+      "required": true
+    }
+  ],
+  "conflicts": [
+    {
+      "left": "DELTA-001",
+      "right": "DELTA-003",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "unresolved_dependencies": [],
+  "expected_standing": "CONFLICT_UNRESOLVED"
+}
